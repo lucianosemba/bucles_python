@@ -35,3 +35,42 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+numero_1 = int(input('Ingrese el primer número de la secuencia\n'))
+numero_2 = int(input('Ingrese el segundo número de la secuencia\n'))
+operacion = str(input('Ingrese la operación que desea ejecutar \n'))
+
+resultado = 0
+
+while operacion != "Fin":
+    if operacion == "+":
+        resultado = numero_1 + numero_2
+        print("El resultado es", resultado)
+        break
+
+    if operacion == "-":
+        resultado = numero_1 - numero_2
+        print("El resultado es", resultado)
+        break
+
+    if operacion == "*":
+        resultado = numero_1 * numero_2
+        print("El resultado es", resultado)
+        break
+
+    if operacion == "/":
+        resultado = numero_1 / numero_2
+        print("El resultado es", resultado)
+        break
+
+    if operacion == "**":
+        resultado = numero_1 ** numero_2
+        print("El resultado es", resultado)
+        break
+    
+    else:
+        print("Error, el operador ingresado no es alguno de lo soportados o no es la palabra FIN")
+        operacion = str(input('Ingrese la operación que desea ejecutar \n'))
+
+print("El programa ha terminado")
+
+
